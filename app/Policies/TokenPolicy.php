@@ -3,10 +3,10 @@
 namespace App\Policies;
 
 use App\Models\User;
-use App\Models\Post;
+use Rupadana\ApiService\Models\Token;
 use Illuminate\Auth\Access\HandlesAuthorization;
 
-class PostPolicy
+class TokenPolicy
 {
     use HandlesAuthorization;
 
@@ -15,15 +15,15 @@ class PostPolicy
      */
     public function viewAny(User $user): bool
     {
-        return $user->can('view_any_post');
+        return $user->can('view_any_token');
     }
 
     /**
      * Determine whether the user can view the model.
      */
-    public function view(User $user, Post $post): bool
+    public function view(User $user, Token $token): bool
     {
-        return $user->can('view_post');
+        return $user->can('view_token');
     }
 
     /**
@@ -31,23 +31,23 @@ class PostPolicy
      */
     public function create(User $user): bool
     {
-        return $user->can('create_post');
+        return $user->can('create_token');
     }
 
     /**
      * Determine whether the user can update the model.
      */
-    public function update(User $user, Post $post): bool
+    public function update(User $user, Token $token): bool
     {
-        return $user->can('update_post');
+        return $user->can('update_token');
     }
 
     /**
      * Determine whether the user can delete the model.
      */
-    public function delete(User $user, Post $post): bool
+    public function delete(User $user, Token $token): bool
     {
-        return $user->can('delete_post');
+        return $user->can('delete_token');
     }
 
     /**
@@ -55,13 +55,13 @@ class PostPolicy
      */
     public function deleteAny(User $user): bool
     {
-        return $user->can('delete_any_post');
+        return $user->can('delete_any_token');
     }
 
     /**
      * Determine whether the user can permanently delete.
      */
-    public function forceDelete(User $user, Post $post): bool
+    public function forceDelete(User $user, Token $token): bool
     {
         return $user->can('{{ ForceDelete }}');
     }
@@ -77,7 +77,7 @@ class PostPolicy
     /**
      * Determine whether the user can restore.
      */
-    public function restore(User $user, Post $post): bool
+    public function restore(User $user, Token $token): bool
     {
         return $user->can('{{ Restore }}');
     }
@@ -93,7 +93,7 @@ class PostPolicy
     /**
      * Determine whether the user can replicate.
      */
-    public function replicate(User $user, Post $post): bool
+    public function replicate(User $user, Token $token): bool
     {
         return $user->can('{{ Replicate }}');
     }
