@@ -10,6 +10,7 @@ use Filament\Models\Contracts\HasAvatar;
 use Illuminate\Notifications\Notifiable;
 use Spatie\MediaLibrary\InteractsWithMedia;
 use Filament\AvatarProviders\UiAvatarsProvider;
+use Filament\Panel;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -59,5 +60,10 @@ class User extends Authenticatable implements HasMedia, HasAvatar
         return $this->getMedia('avatars')->first()?->getUrl()
             ?? $this->getMedia('avatars')->first()?->getUrl('thumb')
             ?? (new UiAvatarsProvider())->get($this);
+    }
+
+    public function canAccessPanel(Panel $panel): bool
+    {
+        return true;
     }
 }
