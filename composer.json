@@ -62,7 +62,7 @@
             "@php artisan shield:super-admin --user=1 --panel=admin",
             "@php artisan shield:generate --resourrce=RoleResource --panel=admin",
             "@php artisan filamnnt:optimize-clear"
-
+            
         ]
     },
     "extra": {
