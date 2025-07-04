@@ -58,6 +58,6 @@ class User extends Authenticatable implements HasMedia, HasAvatar
     {
         return $this->getMedia('avatars')->first()?->getUrl()
             ?? $this->getMedia('avatars')->first()?->getUrl('thumb')
-                ?? (new UiAvatarsProvider())->getAvatarUrl($this);
+            ?? (new UiAvatarsProvider())->get($this);
     }
 }
