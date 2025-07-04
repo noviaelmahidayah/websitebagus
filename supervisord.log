@@ -1,8 +1,0 @@
-2025-07-04 17:11:13,890 INFO Set uid to user 0 succeeded
-2025-07-04 17:11:13,892 INFO supervisord started with pid 1
-2025-07-04 17:11:14,900 INFO spawned: 'laravel-npm' with pid 104
-2025-07-04 17:11:14,905 INFO spawned: 'laravel-queue' with pid 105
-2025-07-04 17:11:14,909 INFO spawned: 'php-fpm' with pid 106
-2025-07-04 17:11:16,523 INFO success: laravel-npm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2025-07-04 17:11:16,524 INFO success: laravel-queue entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
-2025-07-04 17:11:16,525 INFO success: php-fpm entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
