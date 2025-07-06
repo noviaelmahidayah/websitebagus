@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-<section class="text-gray-400 bg-gray-900 body-font">
+<section class="text-gray-400 bg-white body-font">
   <div class="container px-5 py-24 mx-auto flex flex-col">
     <div class="lg:w-4/6 mx-auto">
       <div class="rounded-lg h-full overflow-hidden">
@@ -12,12 +12,12 @@
             <img src="{{ $post->user->getFilamentAvatarUrl()}}" class="rounded-full w-20 h-20 object-cover">
           </div>
           <div class="flex flex-col items-center text-center justify-center">
-            <h2 class="font-medium title-font mt-4 text-white text-lg">{{$post->user->name}}</h2>
+            <h2 class="font-medium title-font mt-4 text-black text-lg">{{$post->user->name}}</h2>
             <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
-            <p class="text-base text-white">Created At {{$post->created_at}}</p>
+            <p class="text-base text-black">Created At {{$post->created_at}}</p>
           </div>
         </div>
-        <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left text-white">
+        <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left text-black">
         <h1 class="text-5xl font-bold">{{ $post->title }}</h1>
         <div id="blog-content"> {!! $post->content !!} </div>
           <a class="text-indigo-500 inline-flex items-center">Learn More
