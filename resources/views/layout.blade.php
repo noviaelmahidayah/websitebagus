@@ -30,10 +30,9 @@
      class="w-100 h-10 p-full bg-transpant-500 rounded-full object-contain" /> </a>
         </a>
         <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-            <a href="{{url('articles')}}" class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Artikel
-        </a>
-        <a href="{{url('penulis')}}" class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Penulis
-        </a>
+            <a class="mr-5 hover:text-gray-900" href="{{ url('/') }}">Home</a>
+            <a href="{{url('articles')}}" class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Artikel</a>
+        <a href="{{url('penulis')}}" class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Penulis</a>
         </nav>
         <a href="https://websitebagus-production.up.railway.app/admin" class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Login
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
@@ -46,22 +45,26 @@
 @yield('content')
 
 
-    <footer class="text-gray-400 bg-gray-900 body-font">
+    <footer class="text-gray-400 body-font">
     <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap md:text-left text-center order-first">
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+            <h2 class="title-font font-medium text-black tracking-widest text-sm mb-3">CATEGORIES</h2>
             <nav class="list-none mb-10">
             <li>
-                <a class="text-gray-400 hover:text-white">Brand Lokal</a>
+                <a class="text-gray-400 hover:text-black">Brand Lokal</a>
+                <a class="text-gray-400 hover:text-black">Rutin Pakai</a>
+                <a class="text-gray-400 hover:text-black">Harga Terjangkau</a>
             </li>
             </nav>
         </div>
         <div class="lg:w-1/4 md:w-1/2 w-full px-4">
-            <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">TAGS</h2>
+            <h2 class="title-font font-medium text-black tracking-widest text-sm mb-3">TAGS</h2>
             <nav class="list-none mb-10">
             <li>
-                <a class="text-gray-400 hover:text-white">Remaja</a>
+                <a class="text-gray-400 hover:text-black">Remaja</a>
+                <a class="text-gray-400 hover:text-black">Sunscreen</a>
+                <a class="text-gray-400 hover:text-black">Murah</a>
             </li>
             </nav>
         </div>
@@ -80,7 +83,7 @@
         </div>
         </div>
     </div>
-    <div class="bg-gray-800 bg-opacity-75">
+    <div class="bg-gray-100">
         <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-red-500 rounded-full" viewBox="0 0 24 24">

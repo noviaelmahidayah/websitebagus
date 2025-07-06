@@ -11,4 +11,10 @@ class PostController extends Controller
         $post = Post::where('slug', $slug)->firstOrFail();
        return view('post.detail', ['post' => $post]);
     }
+
+     public function showArtikel()
+    {
+        $artikel = Post::where('published', 1)->latest()->get();
+        return view('post.artikel', compact('artikel'));
+    }
 }
