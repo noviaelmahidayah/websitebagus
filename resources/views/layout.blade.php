@@ -21,10 +21,10 @@
         @endif
     </head>
     <body>
-    <header class="text-gray-400 bg-gray-900 body-font">
+    <header class="text-gray-400 bg-white body-font">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
         <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-       <a href="{{url('/')}}"> <img src="https://asia.pokemon-card.com/id/wp-content/themes/pcg_theme_id/images/header/logo.svg"
+       <a href="{{url('/')}}"> <img src="https://placehold.co/200x50?text=Novia+Elma+Hidayah"
      alt="Logo"
      class="w-100 h-10 p-full bg-transpant-500 rounded-full object-contain" /> </a>
         </a>
@@ -52,7 +52,7 @@
             <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
             <nav class="list-none mb-10">
             <li>
-                <a class="text-gray-400 hover:text-white">Pokemon</a>
+                <a class="text-gray-400 hover:text-white">Brand Lokal</a>
             </li>
             </nav>
         </div>
@@ -60,7 +60,7 @@
             <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">TAGS</h2>
             <nav class="list-none mb-10">
             <li>
-                <a class="text-gray-400 hover:text-white">Ikatan Takdir</a>
+                <a class="text-gray-400 hover:text-white">Remaja</a>
             </li>
             </nav>
         </div>

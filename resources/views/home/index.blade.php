@@ -1,6 +1,6 @@
 @extends('layout')
 @section('content')
-<section class="text-gray-400 bg-gray-900 body-font">
+<section class="text-gray-800 bg-white body-font">
   <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
     <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 mb-10">
       <a href = "{{ route('post.detail', ['slug'=> $featured_post->slug]) }}"><img class="object-cover object-center rounded" src="{{$featured_post->getFirstMediaUrl('featured_image')}}" /></a>
@@ -14,7 +14,7 @@
     </div>
   </div>
 </section>
-<section class="text-gray-400 bg-gray-900 body-font">
+<section class="text-gray-800 bg-white body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-col text-center w-full mb-20">
       <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Master Cleanse Reliac Heirloom</h1>
@@ -64,12 +64,12 @@
     </div>
   </div>
 </section>
-<section class="text-gray-400 bg-gray-900 body-font">
+<section class="text-gray-800 bg-white body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap -m-4">
       @foreach($post_list as $post)
       <div class="p-4 md:w-1/3">
-        <div class="h-full border-2 border-gray-800 rounded-lg overflow-hidden">
+        <div class="h-full border-2 border-gray-800  rounded-lg overflow-hidden">
           <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="{{$featured_post->getFirstMediaUrl('featured_image')}}" alt="blog">
           <div class="p-6">
             <h2 class="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">CATEGORY</h2>
