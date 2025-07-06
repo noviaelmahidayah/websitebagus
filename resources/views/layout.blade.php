@@ -6,7 +6,6 @@
 
         <title>{{config('app.name')}}</title>
 
-        <link rel="icon" href="https://th.bing.com/th/id/ODLS.918c2fa3-4c3b-4b1b-8e15-d406740f178e?w=32&h=32&qlt=90&pcl=fffffa&o=6&pid=1.2" type="image/x-icon">
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -34,7 +33,7 @@
         <a href="{{url('penulis')}}" class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Penulis
         </a>
         </nav>
-        <a href="https://praktekfilabelanugrah-production.up.railway.app/admin/login" class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Login
+        <a href="https://websitebagus-production.up.railway.app/admin" class="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">Login
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
             <path d="M5 12h14M12 5l7 7-7 7"></path>
         </svg>
