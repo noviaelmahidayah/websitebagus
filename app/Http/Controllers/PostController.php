@@ -12,9 +12,9 @@ class PostController extends Controller
        return view('post.detail', ['post' => $post]);
     }
 
-     public function showArtikel()
+     public function showArticles()
     {
         $artikel = Post::where('published', 1)->latest()->get();
-        return view('post.artikel', compact('artikel'));
+        return view('post.articles', compact('articels'));
     }
 }
