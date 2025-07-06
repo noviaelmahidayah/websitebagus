@@ -6,6 +6,8 @@
 
         <title>{{config('app.name')}}</title>
 
+        <link rel="icon" href="https://images.soco.id/d02ec548-c61c-48d8-85d5-c26517608ba9-image-0-1731575916401" type="image/png">
+
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
