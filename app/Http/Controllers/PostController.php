@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
-    public function detail($slug){
-        $post = Post::where('slug', $slug)->firstOrFail();
-       return view('post.detail', ['post' => $post]);
-    }
+    // public function detail($slug){
+    //     $post = Post::where('slug', $slug)->firstOrFail();
+    //    return view('post.detail', ['post' => $post]);
+    // }
 
      public function showArticles()
     {
